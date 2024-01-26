@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract Product",
+						"name": "product",
+						"type": "address"
+					}
+				],
+				"name": "add_product",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/product_database.sol": "ProductDb"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/product.sol": {
+			"keccak256": "0x251db2c2cfc99abc29e9e031d0fed60a0b5a38233c8bc7179aec163cfc5473a2",
+			"urls": [
+				"bzz-raw://4488bd494540f9b40bb63ea78be8e1550c62f72175c138f6479fdc24e687e0ce",
+				"dweb:/ipfs/QmSeDgvjSkDgLojLQ5cUSJEcLUMv657WijEfAFF6vxZFFG"
+			]
+		},
+		"contracts/product_database.sol": {
+			"keccak256": "0xd83a6d7dfffc2e3fc49bbab178ca6353aac9bc63e2301bfae0de83b52f74fced",
+			"urls": [
+				"bzz-raw://1c3ac5744fc9066d809d4b63dd4b287717d89899a5cbe5692e85c1be05411eb1",
+				"dweb:/ipfs/QmeTz2mi1FJuFn44GCMB2rNaz7yyA8w3yRdWSNGwwPMKUv"
+			]
+		}
+	},
+	"version": 1
+}

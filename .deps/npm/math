@@ -1,0 +1,8 @@
+/**
+ * Minified by jsDelivr using UglifyJS v3.1.10.
+ * Original file: /npm/math@0.0.3/math.js
+ * 
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+(function(){"undefined"!=typeof module&&null!==module&&module.exports&&(module.exports=Math),Math.samesign=function(t,n){return t>=0!=n<0},Math.copysign=function(t,n){return Math.samesign(t,n)?t:-t},Math.add=function(t,n){return+t+ +n},Math.sum=function(t){return t.reduce(Math.add)},Math.mul=function(t,n){return t*n},Math.prod=function(t){return t.reduce(Math.mul)},Math.factorial=function(t){var n;return t<0?1/0:0===t?1:Math.prod.apply(null,function(){n=[];for(var u=1;1<=t?u<=t:u>=t;1<=t?u++:u--)n.push(u);return n}.apply(this,arguments))},Math.gcd=function(t,n){for(var u;n;)t=(u=[n,t%n])[0],n=u[1];return t},Math.lcm=function(t,n){return t/Math.gcd(t,n)*n}}).call(this);
+//# sourceMappingURL=/sm/b069dadd3f22ef51d9f6faaa7a6af4abe6d25c38b1c4470964896748ff841ef6.map

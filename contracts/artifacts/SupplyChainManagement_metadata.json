@@ -1,0 +1,421 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "eoq",
+						"type": "uint256"
+					}
+				],
+				"name": "economic_order_quantity",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"name": "order",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "rop",
+						"type": "uint256"
+					}
+				],
+				"name": "reorder_point",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_order_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "accepted",
+						"type": "bool"
+					}
+				],
+				"name": "accept_order",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "annual_demand",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cost_to_place_and_process",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "holding_cost",
+						"type": "uint256"
+					}
+				],
+				"name": "calculate_economic_order_quantity",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "annual_demand",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "days_open",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "delivery_days",
+						"type": "uint256"
+					}
+				],
+				"name": "calculate_reorder_point",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "quantity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "orderer",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "supplier",
+						"type": "address"
+					}
+				],
+				"name": "create_order",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "display_actors",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "display_all_orders",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "dummy_address",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "actor_type",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "actor_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "actor_region",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "actor_national_id",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_initial_quantity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_annual_demand",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_days_open",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_delivery_days",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_cost_to_place_and_process",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_holding_cost",
+						"type": "uint256"
+					}
+				],
+				"name": "dummy_register",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "order_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "suppliers_supplier",
+						"type": "address"
+					}
+				],
+				"name": "execute_order",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "actor_type",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "actor_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "actor_region",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "actor_national_id",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_initial_quantity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_annual_demand",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_days_open",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_delivery_days",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_cost_to_place_and_process",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_holding_cost",
+						"type": "uint256"
+					}
+				],
+				"name": "register",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/test.sol": "SupplyChainManagement"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/actor.sol": {
+			"keccak256": "0x037dfbaa7420614b500dafe048973e8fa24f8c33d43a6f4a8b0761b6e58ae9c6",
+			"urls": [
+				"bzz-raw://66c4a2c985998a06f795e0d32d54133d90dbf7d3d66b85ca68ec317266943113",
+				"dweb:/ipfs/QmPpbrbL7uyFGDtoiF2ZuFZYrsejNQiPgXSrYepugVEZ8p"
+			]
+		},
+		"contracts/actor_database.sol": {
+			"keccak256": "0x2c26d73244f85aa3a67c90025d76bbff74c1c19671476b7f34f677ff0103144b",
+			"urls": [
+				"bzz-raw://70b858783be41099ce0be98f6b6dabfb8dedf6e915d407414fcfc583fff69c8e",
+				"dweb:/ipfs/QmQc72R36TMzYWAWFD9GADwEzPoJ9C4sx6pyVjF64ccV1G"
+			]
+		},
+		"contracts/inventory.sol": {
+			"keccak256": "0x17281ea556df748b9c043c77cfa9053f5bb735d0d36d65facc49907601430bb1",
+			"urls": [
+				"bzz-raw://193afadd8d0df6c84dc59b3d2806b1f40201a38c27e912ae8a126deb3a7bff23",
+				"dweb:/ipfs/QmZPB947FjsupkKm7nDD97jbK6sDw7ZN1GqLNYrkNF4hF8"
+			]
+		},
+		"contracts/order.sol": {
+			"keccak256": "0x1f7ae209c3a196d079918bb64e770822ae45144103a1d7bbd421dd6ff9f3e5b0",
+			"urls": [
+				"bzz-raw://e0b9e114938826a42899e2be16d2c49edb0eaff50f6f42281b5b6e4b04b97654",
+				"dweb:/ipfs/QmSsrLgKgMGYtbXPkzxYPZFNUiBC44k1M2GsdoKR34QW61"
+			]
+		},
+		"contracts/order_database.sol": {
+			"keccak256": "0xefbae4f4e5efe380b5b404e7b5feb1da5b37868123b6cb46b1dcf2dd9c229b13",
+			"urls": [
+				"bzz-raw://50c5856b7ca2e0eca7d2933716bc65d6b4cceb63e193c3ce2836b6b946cb9a2b",
+				"dweb:/ipfs/QmeqBUZKEPNAqpUru8uQaJfsu8NpYVVSZE4oqNnSc4YDyY"
+			]
+		},
+		"contracts/product.sol": {
+			"keccak256": "0x251db2c2cfc99abc29e9e031d0fed60a0b5a38233c8bc7179aec163cfc5473a2",
+			"urls": [
+				"bzz-raw://4488bd494540f9b40bb63ea78be8e1550c62f72175c138f6479fdc24e687e0ce",
+				"dweb:/ipfs/QmSeDgvjSkDgLojLQ5cUSJEcLUMv657WijEfAFF6vxZFFG"
+			]
+		},
+		"contracts/product_database.sol": {
+			"keccak256": "0xd83a6d7dfffc2e3fc49bbab178ca6353aac9bc63e2301bfae0de83b52f74fced",
+			"urls": [
+				"bzz-raw://1c3ac5744fc9066d809d4b63dd4b287717d89899a5cbe5692e85c1be05411eb1",
+				"dweb:/ipfs/QmeTz2mi1FJuFn44GCMB2rNaz7yyA8w3yRdWSNGwwPMKUv"
+			]
+		},
+		"contracts/test.sol": {
+			"keccak256": "0xd526c326ba3af60e06853fc6b0fbe239db99e9f6294c3f6a4ce0ad2b8b5f7c18",
+			"urls": [
+				"bzz-raw://749d8e649a6a050651703f738e560a1089b2a1c63ac79cc3b8c2f5be7a0c221e",
+				"dweb:/ipfs/Qmb4PdGjGXmCVMfpj6uxxeanxFqsJgvBKK2pRygP9gz4nq"
+			]
+		},
+		"contracts/transfer_ether.sol": {
+			"keccak256": "0xaa40f068dcaac1cd5d00a186c8bb6b5e7171a8dbaff3c25834ab530d062295f2",
+			"urls": [
+				"bzz-raw://06729ccc7b9682458b99127c9bce5883fd755d497ddd977090b58de1493290b3",
+				"dweb:/ipfs/QmRvMpT8No1mDGF4HM6zv7JbiknG4AuEFbcMRRadZMYB9y"
+			]
+		}
+	},
+	"version": 1
+}

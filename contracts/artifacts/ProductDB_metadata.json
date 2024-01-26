@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract Order",
+						"name": "order",
+						"type": "address"
+					}
+				],
+				"name": "add_order",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/order_database.sol": "ProductDB"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/order.sol": {
+			"keccak256": "0x5f8812d61edaf2703fc512e15e11aec05c644fd5a250ea29747a475b0d3577dd",
+			"urls": [
+				"bzz-raw://73ccc1246c33bab3e48537862a0a1499d08e8f7cb4af0e88f319811c17d7bf94",
+				"dweb:/ipfs/QmdHKpywSeWLufxF3uyTfvNGQGUhsNownS54J7deJkTQ9A"
+			]
+		},
+		"contracts/order_database.sol": {
+			"keccak256": "0x5cffa595fa3d437ca3bb94de089b1e5c681b6db00dcc992651ddcecc97f66e5e",
+			"urls": [
+				"bzz-raw://223b8d846024350eacbbd9fc16ab878f58bce0bf11149c08508295a99334fc69",
+				"dweb:/ipfs/QmRrpQqSYcKygLhnDYUmzbVg9sSjEnnKKSPkVPVVtGxbkJ"
+			]
+		}
+	},
+	"version": 1
+}

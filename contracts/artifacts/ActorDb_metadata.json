@@ -1,0 +1,149 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "actor_list",
+				"outputs": [
+					{
+						"internalType": "contract Actor",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract Actor",
+						"name": "actor",
+						"type": "address"
+					}
+				],
+				"name": "add_actor",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "display_all_actors",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "get_actor",
+				"outputs": [
+					{
+						"internalType": "contract Actor",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "get_count",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "search_actor",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/actor_database.sol": "ActorDb"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/actor.sol": {
+			"keccak256": "0x037dfbaa7420614b500dafe048973e8fa24f8c33d43a6f4a8b0761b6e58ae9c6",
+			"urls": [
+				"bzz-raw://66c4a2c985998a06f795e0d32d54133d90dbf7d3d66b85ca68ec317266943113",
+				"dweb:/ipfs/QmPpbrbL7uyFGDtoiF2ZuFZYrsejNQiPgXSrYepugVEZ8p"
+			]
+		},
+		"contracts/actor_database.sol": {
+			"keccak256": "0x2c26d73244f85aa3a67c90025d76bbff74c1c19671476b7f34f677ff0103144b",
+			"urls": [
+				"bzz-raw://70b858783be41099ce0be98f6b6dabfb8dedf6e915d407414fcfc583fff69c8e",
+				"dweb:/ipfs/QmQc72R36TMzYWAWFD9GADwEzPoJ9C4sx6pyVjF64ccV1G"
+			]
+		},
+		"contracts/inventory.sol": {
+			"keccak256": "0x17281ea556df748b9c043c77cfa9053f5bb735d0d36d65facc49907601430bb1",
+			"urls": [
+				"bzz-raw://193afadd8d0df6c84dc59b3d2806b1f40201a38c27e912ae8a126deb3a7bff23",
+				"dweb:/ipfs/QmZPB947FjsupkKm7nDD97jbK6sDw7ZN1GqLNYrkNF4hF8"
+			]
+		}
+	},
+	"version": 1
+}
